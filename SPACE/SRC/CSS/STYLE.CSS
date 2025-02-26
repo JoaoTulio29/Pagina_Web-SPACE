@@ -6,22 +6,6 @@
     font-family: "Ubuntu", serif;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .names {
-        flex-direction: column;
-    }
-
-    .names input {
-        width: 100%;
-    }
-}
-
 body {
     background-image: url('/SPACE/img/fundo\ espaço.png');
     background-color: #f7ac50;
@@ -56,62 +40,25 @@ header {
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        top: 15px;
+        top: 25px;
+        width: 90vw;
 
         & h2 {
             color: #f7ac50;
         }
     }
 
-    & .list {
+    & .text {
         position: fixed;
         left: 50%;
         transform: translate(-50%, -50%);
-        top: 40%;
-        display: grid;
+        top: 45%;
         width: 300px;
-        height: 250px;
-
-        & .names {
-            position: relative;
-            grid-template-columns: 1fr 1fr;
-            display: flex;
-            gap: 25px;
-            top: 25%;
-            height: 50px;
-
-
-            & input {
-
-                background-color: rgba(0, 0, 0, 0.586);
-                border-radius: 5px;
-                border: none;
-                height: 50px;
-                width: 50%;
-                color: #f7ac50;
-                padding: 0 10px;
-                outline: none;
-            }
-        }
-
-        & .data {
-            display: grid;
-
-            & input {
-                background-color: rgba(0, 0, 0, 0.586);
-                border-radius: 5px;
-                border: none;
-                height: 50px;
-                width: 100%;
-                color: #f7ac50;
-                padding: 0 10px;
-                outline: none;
-            }
         }
 
     }
 
-    & .singUp {
+    & #enterButton {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -127,7 +74,7 @@ header {
         cursor: pointer;
     }
 
-    .singUp:hover {
+    #enterButton:hover {
         background: linear-gradient(45deg, #fff098, #f7ac50, #fff098);
         box-shadow: 0 0 10px #ffff, 0 0 10px #f7ac50;
     }
@@ -139,10 +86,14 @@ header {
         transform: translateX(-50%);
         bottom: 30px;
 
-        & a {
+        & #instagramLink {
             position: relative;
-
+            cursor: pointer;
             color: #f7ac50;
+        }
+
+        #instagramLink:hover {
+            color: rgb(255, 145, 0);
         }
     }
 
@@ -152,11 +103,3 @@ header {
         transform: translateX(-50%);
         bottom: 180px;
     }
-}
-
-.insta {
-    position: fixed;
-    color: #f7ac50;
-    bottom: 5px;
-    right: 5px;
-}

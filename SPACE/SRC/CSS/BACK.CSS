@@ -6,22 +6,6 @@
     font-family: "Ubuntu", serif;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .names {
-        flex-direction: column;
-    }
-
-    .names input {
-        width: 100%;
-    }
-}
-
 body {
     background-image: url('/SPACE/img/fundo\ espaço.png');
     background-size: cover;
@@ -38,124 +22,14 @@ header {
     top: 20px;
 }
 
-.container {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.419);
-    border-radius: 25px;
-    height: 550px;
-    width: 450px;
-    box-shadow: 0 0 5px #ffff, 0 0 5px #ffff, 0 0 30px #f7ac50;
-    /* Efeito neon */
-    text-align: center;
-
-    & .topContainer {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 15px;
-
-        & h2 {
-            color: #f7ac50;
-        }
-    }
-
-    & .listBack {
-        position: fixed;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        top: 45%;
-        display: grid;
-        width: 300px;
-        height: 250px;
-
-        & .names {
-            position: relative;
-            grid-template-columns: 1fr 1fr;
-            display: flex;
-            gap: 25px;
-            top: 25%;
-            height: 50px;
-
-
-            & input {
-
-                background-color: rgba(0, 0, 0, 0.586);
-                border-radius: 5px;
-                border: none;
-                height: 50px;
-                width: 50%;
-                color: #f7ac50;
-                padding: 0 10px;
-                outline: none;
-            }
-        }
-
-        & .data {
-            display: grid;
-
-            & input {
-                background-color: rgba(0, 0, 0, 0.586);
-                border-radius: 5px;
-                border: none;
-                height: 50px;
-                width: 100%;
-                color: #f7ac50;
-                padding: 0 10px;
-                outline: none;
-            }
-        }
-
-    }
-
-    & .singUp {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 100px;
-        width: 150px;
-        height: 45px;
-        border-radius: 10px;
-        background: linear-gradient(45deg, #f7ac50, #fff098, #f7ac50);
-        /* Gradiente neon */
-        box-shadow: 0 0 5px #ffff, 0 0 5px #ffff, 0 0 30px #f7ac50;
-        /* Efeito neon */
-        border: none;
-        cursor: pointer;
-    }
-
-    .singUp:hover {
-        background: linear-gradient(45deg, #fff098, #f7ac50, #fff098);
-        box-shadow: 0 0 10px #ffff, 0 0 10px #f7ac50;
-    }
-
-
-    & .information {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 30px;
-
-        & a {
-            position: relative;
-
-            color: #f7ac50;
-        }
-    }
-
-    & .mark {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 180px;
-    }
+button {
+    cursor: pointer;
 }
 
-.insta {
+#instagramLink {
     position: fixed;
     color: #f7ac50;
     bottom: 5px;
     right: 5px;
+    cursor: pointer;
 }
