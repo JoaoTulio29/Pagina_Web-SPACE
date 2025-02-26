@@ -23,7 +23,8 @@
 }
 
 body {
-    background-image: url('/img/fundoespaço.png');
+    background-image: url('/SPACE/img/fundo\ espaço.png');
+    background-color: #f7ac50;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
