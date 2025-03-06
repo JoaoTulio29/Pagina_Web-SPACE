@@ -109,8 +109,8 @@
         top: 20px;
     }
 
-    
-    
+
+
     #gitHubLink2 {
         position: absolute;
         cursor: pointer;
@@ -133,20 +133,24 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color:#f7ac50;
+            color: #f7ac50;
 
             .plan {
                 position: absolute;
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out;
-            
-                img {
+                
+                img {    
                     height: 65vh;
                 }
             }
 
             .plan.active {
                 opacity: 1;
+
+                img {
+                    height: 65vh;
+                }
             }
         }
 
