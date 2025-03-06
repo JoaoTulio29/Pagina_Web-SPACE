@@ -1,11 +1,15 @@
+
+// LINKAR SEM APARECER URL
 document.getElementById("backButton").addEventListener("click", function() {
-    window.location.href = "INDEX.HTML";
+    window.location.href = "SPACE.HTML";
 });
 
 document.getElementById("gitHubLink2").addEventListener("click", function() {
     window.open("https://github.com/JoaoTulio29", "_blank");
 });
 
+
+// ANIMAÇÕES DOS PLANETAS, E FUNCIONAMENTO DOS BOTÕES
 document.addEventListener("DOMContentLoaded", () => {
     const planets = document.querySelectorAll(".plan"); // Seleciona todos os planetas
     let currentIndex = 0; // Índice do planeta atual

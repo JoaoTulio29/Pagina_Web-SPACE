@@ -1,5 +1,5 @@
 document.getElementById("enterButton").addEventListener("click", function () {
-    window.location.href = "LOGIN.HTML";
+    window.location.href = "SECTION.HTML";
 });
 
 document.getElementById("gitHubLink").addEventListener("click", function() {

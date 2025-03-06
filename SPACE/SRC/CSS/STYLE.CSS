@@ -108,6 +108,8 @@
         transform: translateX(-50%);
         top: 20px;
     }
+
+    
     
     #gitHubLink2 {
         position: absolute;
@@ -130,12 +132,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            color:#f7ac50;
 
             .plan {
                 position: absolute;
                 opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-
+                transition: opacity 0.5s ease-in;
+            
                 img {
                     height: 65vh;
                 }
