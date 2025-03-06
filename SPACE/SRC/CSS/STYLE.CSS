@@ -99,8 +99,8 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-
     color: white;
+    overflow: hidden;
 
     header {
         position: fixed;
@@ -108,11 +108,7 @@
         transform: translateX(-50%);
         top: 20px;
     }
-
-    button {
-        cursor: pointer;
-    }
-
+    
     #gitHubLink2 {
         position: absolute;
         cursor: pointer;
@@ -125,25 +121,65 @@
         color: rgb(255, 145, 0);
     }
 
-    .carrossel{
-        position: absolute;
-        background-color:#f7ac50;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw;
-        height: 50vh;
-        display: grid;
-        grid-auto-flow: column;
-        gap: 10px;
+    .container {
 
-        img {
+        .carrossel {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .plan {
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+
+                img {
+                    height: 65vh;
+                }
+            }
+
+            .plan.active {
+                opacity: 1;
+            }
+        }
+
+
+
+        .arrows {
             position: absolute;
-            transform: translateY(-50%);
+            transform: translate(-50%, -50%);
             top: 50%;
-            height: 100px;
-            width: auto;
-            background-color: #fff098;
+            left: 50%;
+            display: flex;
+            justify-content: space-between;
+            gap: 500px;
+
+            button {
+                border-radius: 50%;
+                background: linear-gradient(45deg, #f7ac50, #fff098, #f7ac50);
+                box-shadow: 0 0 5px #ffff, 0 0 5px #ffff, 0 0 30px #f7ac50;
+                border: none;
+                cursor: pointer;
+
+
+                :hover {
+                    border-radius: 50%;
+                    background: linear-gradient(45deg, #fff098, #f7ac50, #fff098);
+                    box-shadow: 0 0 10px #ffff, 0 0 10px #f7ac50;
+                }
+
+                img {
+                    height: 50px;
+                    margin-top: 4px;
+                }
+            }
+
+            button:nth-child(2) {
+                transform: scale(-1);
+            }
         }
     }
 }
