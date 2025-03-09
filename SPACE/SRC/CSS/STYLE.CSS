@@ -109,7 +109,13 @@
         top: 20px;
     }
 
-
+    /* SERA FEITA UMA ALTERAÇÃO NO BOTÃO BACK
+    
+    #backButton {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }*/
 
     #gitHubLink2 {
         position: absolute;
@@ -137,19 +143,97 @@
 
             .plan {
                 position: absolute;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-                
-                img {    
+
+
+                img {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
                     height: 65vh;
+                }
+
+                h2 {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+
+                .content {
+                    position: absolute;
+                    background-color: #000000c4;
+                    height: 100vh;
+                    width: 0px;
+                    transform: translate(-100%, 0.7%);
+                    left: -555px;
+                    top: 50%;
+                    transition: transform 0.7s ease-in-out;
+                    top: -133px;
+                    border-radius: 30px;
+
+                    .inf {
+                        position: relative;
+                        right: -35px;
+                        top: 15px;
+                        height: 95vh;
+                        width: 400px;
+                        color: rgb(255, 255, 255);
+                        opacity: 0;
+                    }
+
+                    h2{
+                        color: #f7ac50;
+                    }
+
+                    p{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                    }
                 }
             }
 
             .plan.active {
-                opacity: 1;
+
 
                 img {
+                    opacity: 1;
                     height: 65vh;
+                }
+
+                h2 {
+                    opacity: 1;
+                }
+
+                .content {
+                    position: absolute;
+                    background-color: #000000c4;
+                    height: 100vh;
+                    width: 450px;
+                    transform: translate(0, 0.7%);
+                    left: -555px;
+                    top: 50%;
+                    top: -133px;
+                    border-radius: 30px;
+
+                    .inf {
+                        position: relative;
+                        right: -35px;
+                        top: 15px;
+                        height: 95vh;
+                        width: 400px;
+                        color: rgb(255, 255, 255);
+                        opacity: 1;
+
+                        h2{
+                            color: #f7ac50;
+                        }
+
+                        p{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
