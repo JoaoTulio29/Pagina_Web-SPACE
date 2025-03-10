@@ -109,13 +109,6 @@
         top: 20px;
     }
 
-    /* SERA FEITA UMA ALTERAÇÃO NO BOTÃO BACK
-    
-    #backButton {
-        position: absolute;
-        right: 5px;
-        top: 5px;
-    }*/
 
     #gitHubLink2 {
         position: absolute;
@@ -178,11 +171,11 @@
                         opacity: 0;
                     }
 
-                    h2{
+                    h2 {
                         color: #f7ac50;
                     }
 
-                    p{
+                    p {
                         position: absolute;
                         top: 50%;
                         transform: translateY(-50%);
@@ -223,11 +216,11 @@
                         color: rgb(255, 255, 255);
                         opacity: 1;
 
-                        h2{
+                        h2 {
                             color: #f7ac50;
                         }
 
-                        p{
+                        p {
                             position: absolute;
                             top: 50%;
                             transform: translateY(-50%);
