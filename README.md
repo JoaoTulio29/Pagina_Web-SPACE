@@ -1,7 +1,4 @@
 # Pagina Web - SPACE
- Uma página de login do site SPACE, um site com temática espacial.
-
- Primeiro projeto publico
-
+ SPACE é um sitecom temática espacial aonde você pode aprender sobre os planetas do nosso sistema solar de uma forma interativa.
 
 ![alt text](image.png)
